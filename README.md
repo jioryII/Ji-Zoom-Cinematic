@@ -1,5 +1,4 @@
-![portada](multimedia/JI%20ZOOM%20CINEMATIC-portada.png)
-
+![portada](https://cdn.modrinth.com/data/cached_images/e5145c487e4af4e2df5808472ac9898aba8fdc3f.png)
 <p align="center" style="text-align: center;">
   <a href="https://discord.gg/sE27D5SNaq"><img src="https://raw.githubusercontent.com/jioryII/Ji-AFK-Cinematic/main/multimedia/Discord-Button-64.png" alt="Discord" width="7%"></a>
   <a href="https://github.com/jioryII/Ji-Zoom-Cinematic"><img src="https://raw.githubusercontent.com/jioryII/Ji-AFK-Cinematic/main/multimedia/Github-Button-64.png" alt="GitHub" width="7%"></a>
@@ -32,7 +31,7 @@ Whether you are focusing on a distant structure or tracking a moving target, you
 
 ## Flawless zoom mechanics for content creation and exploration
 
-<p align="center"><img src="multimedia/example-jizoom.webp" width="80%"/></p>
+<p align="center"><img src="https://github.com/jioryII/Ji-Zoom-Cinematic/blob/main/multimedia/example-jizoom.webp?raw=true" width="80%"/></p>
 
 ---
 <p align="center"><img src="https://static.wikia.nocookie.net/minecraft/images/c/cb/Axolotl_%28lucy%29.gif/revision/latest?cb=20201217015152" width="90"/></p>
