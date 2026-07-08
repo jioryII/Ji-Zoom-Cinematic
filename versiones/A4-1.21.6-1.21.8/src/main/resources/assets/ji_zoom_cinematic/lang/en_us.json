@@ -1,0 +1,20 @@
+{
+  "modmenu.descriptionTranslation.ji_zoom_cinematic": "Adds a spectacular customizable cinematic zoom.",
+  "config.ji_zoom_cinematic.title": "Ji Zoom Cinematic Config",
+  "config.ji_zoom_cinematic.borders": "Borders",
+  "config.ji_zoom_cinematic.disabled": "\u00A7cDisabled",
+  "config.ji_zoom_cinematic.zoom_default": "Default Zoom",
+  "config.ji_zoom_cinematic.max_zoom": "Max Zoom",
+  "config.ji_zoom_cinematic.smooth_camera": "Smooth Camera",
+  "config.ji_zoom_cinematic.mouse_wheel": "Mouse Wheel",
+  "config.ji_zoom_cinematic.open_menu": "Open Menu",
+  "config.ji_zoom_cinematic.press_first_key": "\u00A7ePress 1st key...",
+  "config.ji_zoom_cinematic.press_second_key": "\u00A7ePress 2nd key...",
+  "config.ji_zoom_cinematic.zoom_key": "Zoom Key",
+  "config.ji_zoom_cinematic.press_zoom_key": "\u00A7ePress key for Zoom...",
+  "config.ji_zoom_cinematic.reset": "\u00A7eReset",
+  "config.ji_zoom_cinematic.save_exit": "\u00A7aSave & Exit",
+  "config.ji_zoom_cinematic.cancel": "\u00A7cCancel!",
+  "config.ji_zoom_cinematic.on": "\u00A7aON",
+  "config.ji_zoom_cinematic.off": "\u00A7cOFF"
+}

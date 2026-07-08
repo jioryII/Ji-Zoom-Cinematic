@@ -1,0 +1,29 @@
+# Ignore everything in the root by default
+/*
+
+# Allow specific files/folders in the root
+!/multimedia/
+!/versiones/
+!/build_all.ps1
+!/README.md
+!/.gitignore
+
+# Allow all contents inside the allowed directories
+!/multimedia/**
+!/versiones/**
+
+# Ignore the 26.X version as requested
+/versiones/B1*
+/versiones/B1-26.1-26.2/
+
+# Ignore standard Java and Gradle build files within the allowed folders
+.gradle/
+build/
+bin/
+out/
+.idea/
+*.iml
+.vscode/
+run/
+logs/
+*.log

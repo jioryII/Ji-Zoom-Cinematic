@@ -1,0 +1,37 @@
+﻿{
+    "schemaVersion":  1,
+    "id":  "ji_zoom_cinematic",
+    "version":  "${version}",
+    "name":  "Ji Zoom Cinematic",
+    "description": "Adds a spectacular customizable cinematic zoom.",
+    "authors":  [
+                    "jiory_"
+                ],
+    "contact":  {
+    "homepage": "https://modrinth.com/mod/ji-zoom-cinematic",
+                    "issues":  "https://discord.gg/sE27D5SNaq"
+                },
+    "license":  "MIT",
+    "icon":  "assets/ji_zoom_cinematic/icon.png",
+    "environment":  "client",
+    "entrypoints":  {
+                        "client":  [
+                                       "com.ji.zoomcinematic.JiZoomCinematic"
+                                   ],
+                        "modmenu":  [
+                                        "com.ji.zoomcinematic.config.ModMenuIntegration"
+                                    ]
+                    },
+    "mixins":  [
+                   "ji-zoom-cinematic.mixins.json"
+               ],
+    "depends":  {
+                    "fabricloader":  "\u003e=0.16.0",
+                    "minecraft":  "\u003e=1.21.2 \u003c=1.21.3",
+                    "java":  "\u003e=21",
+                    "fabric-api":  "*"
+                },
+    "suggests":  {
+                     "modmenu":  "*"
+                 }
+}
