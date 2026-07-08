@@ -53,7 +53,7 @@ Fully customizable in-game menu (Mod Menu support):
 **Requirements & Supported Versions**
 
 **Supported Minecraft Versions:**
-`1.21` - `1.21.11`
+`1.21.x` - `26.x`
 
 | Loader / Dependency | Version required | Status                                  |
 | ------------------- | ---------------- | --------------------------------------- |
