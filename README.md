@@ -1,3 +1,5 @@
+![portada](multimedia/JI%20ZOOM%20CINEMATIC-portada.png)
+
 <p align="center" style="text-align: center;">
   <a href="https://discord.gg/sE27D5SNaq"><img src="https://raw.githubusercontent.com/jioryII/Ji-AFK-Cinematic/main/multimedia/Discord-Button-64.png" alt="Discord" width="7%"></a>
   <a href="https://github.com/jioryII/Ji-Zoom-Cinematic"><img src="https://raw.githubusercontent.com/jioryII/Ji-AFK-Cinematic/main/multimedia/Github-Button-64.png" alt="GitHub" width="7%"></a>
