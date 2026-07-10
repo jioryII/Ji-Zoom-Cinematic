@@ -186,7 +186,7 @@ public class ConfigScreen extends Screen {
                 button -> {
                     editConfig.barsPercent = 15.0f;
                     editConfig.baseZoomLevel = 0.3333f;
-                    editConfig.maxZoomLevel = 0.0333f;
+                    editConfig.maxZoomLevel = 0.0666f;
                     editConfig.bordersEnabled = true;
                     editConfig.enableCinematicCamera = true;
                     editConfig.mouseWheelEnabled = true;

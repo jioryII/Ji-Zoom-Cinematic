@@ -13,7 +13,7 @@ public class ModConfig {
     // Configuraciones de visualización
     public float barsPercent = 15.0f; // 0 a 30
     public float baseZoomLevel = 0.3333f; // 0.01 a 1.0 (multiplier)
-    public float maxZoomLevel = 0.0333f;
+    public float maxZoomLevel = 0.0666f;
     public int smoothMs = 300;
     
     // Toggles
@@ -24,6 +24,7 @@ public class ModConfig {
     public void copyFrom(ModConfig other) {
                 this.menuKey1 = other.menuKey1;
         this.menuKey2 = other.menuKey2;
+        this.zoomKeyCode = other.zoomKeyCode;
         this.barsPercent = other.barsPercent;
         this.baseZoomLevel = other.baseZoomLevel;
         this.maxZoomLevel = other.maxZoomLevel;
