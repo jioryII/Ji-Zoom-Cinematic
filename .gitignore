@@ -2,15 +2,16 @@
 /*
 
 # Allow specific files/folders in the root
-!/multimedia/
 !/versiones/
 !/build_all.ps1
 !/README.md
 !/.gitignore
 
 # Allow all contents inside the allowed directories
-!/multimedia/**
 !/versiones/**
+
+# Multimedia centralized in https://github.com/jioryII/Ji-Assets
+# (local multimedia/ folder is gitignored and not tracked)
 
 
 # Ignore standard Java and Gradle build files within the allowed folders
