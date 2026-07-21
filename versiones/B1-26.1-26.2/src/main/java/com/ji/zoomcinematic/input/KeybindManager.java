@@ -7,10 +7,10 @@ import net.minecraft.client.Minecraft;
 
 public class KeybindManager {
     public static void checkKeys(Minecraft client) {
-        ModConfig config = ConfigManager.getConfig();
-        if (com.ji.zoomcinematic.util.ReflectionHelper.getScreen(client) != null) return;
+        if (ConfigManager.getConfig() == null) return;
 
-        boolean isZoomDown = com.ji.zoomcinematic.JiZoomCinematic.ZOOM_KEY.isDown();
+        boolean isZoomDown = (com.ji.zoomcinematic.util.ClientScreenUtil.getCurrentScreen(client) == null)
+            && com.ji.zoomcinematic.JiZoomCinematic.ZOOM_KEY.isDown();
         ZoomManager.tick(client, isZoomDown);
     }
 }

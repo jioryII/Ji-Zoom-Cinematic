@@ -7,18 +7,6 @@ import java.lang.reflect.Method;
 
 public class ReflectionHelper {
 
-    public static Object getScreen(net.minecraft.client.Minecraft client) {
-        try {
-            Field screenField = findField(client, "screen", "currentScreen", "field_1755", "activeScreen", "displayedScreen");
-            if (screenField != null) {
-                return screenField.get(client);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
     public static void setScreen(net.minecraft.client.Minecraft client, net.minecraft.client.gui.screens.Screen screen) {
         try {
             Method setScreenMethod = null;
@@ -40,7 +28,7 @@ public class ReflectionHelper {
 
     public static Boolean getSmoothCamera(Options options) {
         try {
-            Field smoothCamField = findField(options, "smoothCameraEnabled", "smoothCamera", "field_1914");
+            Field smoothCamField = findOptionField(options);
             if (smoothCamField != null) {
                 Object val = smoothCamField.get(options);
                 if (val instanceof Boolean) {
@@ -58,7 +46,7 @@ public class ReflectionHelper {
 
     public static void setSmoothCamera(Options options, boolean value) {
         try {
-            Field smoothCamField = findField(options, "smoothCameraEnabled", "smoothCamera", "field_1914");
+            Field smoothCamField = findOptionField(options);
             if (smoothCamField != null) {
                 Object val = smoothCamField.get(options);
                 if (val instanceof Boolean) {
@@ -73,8 +61,8 @@ public class ReflectionHelper {
         }
     }
 
-    private static Field findField(Object options, String... names) {
-        for (String name : names) {
+    private static Field findOptionField(Object options) {
+        for (String name : new String[]{"smoothCameraEnabled", "smoothCamera", "field_1914"}) {
             try {
                 Field f = options.getClass().getField(name);
                 f.setAccessible(true);

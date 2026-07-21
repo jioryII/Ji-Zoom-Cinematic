@@ -2,6 +2,7 @@ package com.ji.zoomcinematic.config;
 
 import com.ji.zoomcinematic.JiZoomCinematic;
 import com.mojang.blaze3d.platform.InputConstants;
+import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.AbstractSliderButton;
@@ -199,6 +200,9 @@ public class ConfigScreen extends Screen {
                 button -> {
                     editConfig.zoomKeyCode = resolveZoomKeyCode();
                     ConfigManager.setConfig(editConfig);
+                    com.ji.zoomcinematic.JiZoomCinematic.syncZoomKeyFromConfig();
+                    Minecraft.getInstance().options.save();
+                    KeyMapping.resetMapping();
                     this.onClose();
                 }
         ).bounds(centerX - 65, bottomY, 130, 20).build());

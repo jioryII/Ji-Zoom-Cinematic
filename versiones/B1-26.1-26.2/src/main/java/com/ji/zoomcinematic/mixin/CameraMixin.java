@@ -15,7 +15,7 @@ public class CameraMixin {
     private void cinematiczoom$applyZoom(float partialTicks, CallbackInfoReturnable<Float> cir) {
         ZoomManager.frameUpdate();
         Minecraft client = Minecraft.getInstance();
-        if (com.ji.zoomcinematic.util.ReflectionHelper.getScreen(client) != null) return;
+        if (com.ji.zoomcinematic.util.ClientScreenUtil.getCurrentScreen(client) != null) return;
         double mul = ZoomManager.getCurrentFovMul();
         if (mul == 1.0) return;
         cir.setReturnValue((float) (cir.getReturnValue() * mul));

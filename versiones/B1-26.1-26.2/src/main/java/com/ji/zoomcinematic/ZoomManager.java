@@ -16,7 +16,7 @@ public class ZoomManager {
     private static Boolean prevSmoothCamera = null;
 
     public static void tick(Minecraft client, boolean isKeyDown) {
-        boolean inScreen = com.ji.zoomcinematic.util.ReflectionHelper.getScreen(client) != null;
+        boolean inScreen = com.ji.zoomcinematic.util.ClientScreenUtil.getCurrentScreen(client) != null;
         boolean wantZoom = isKeyDown && !inScreen;
         boolean starting = wantZoom && !zoomHeld;
         boolean ending = !wantZoom && zoomHeld;

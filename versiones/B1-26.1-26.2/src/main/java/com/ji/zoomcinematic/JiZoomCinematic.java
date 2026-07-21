@@ -4,6 +4,7 @@ import com.ji.zoomcinematic.config.ConfigManager;
 import com.ji.zoomcinematic.input.KeybindManager;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.resources.Identifier;
@@ -16,16 +17,15 @@ public class JiZoomCinematic implements ClientModInitializer {
         Identifier.fromNamespaceAndPath(MOD_ID, "keys")
     );
 
-    public static final KeyMapping ZOOM_KEY = new KeyMapping(
+    public static final KeyMapping ZOOM_KEY = KeyMappingHelper.registerKeyMapping(new KeyMapping(
         "key.ji_zoom_cinematic.zoom",
         InputConstants.Type.KEYSYM,
         GLFW.GLFW_KEY_C,
         CATEGORY
-    );
+    ));
 
     @Override
     public void onInitializeClient() {
-        KeyMapping dummy = ZOOM_KEY;
         ConfigManager.loadConfig();
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
